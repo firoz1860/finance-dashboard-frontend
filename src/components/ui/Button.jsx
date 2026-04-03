@@ -1,0 +1,1 @@
+const Button=({variant='primary',type='button',disabled=false,onClick,children})=><button className={`btn btn-${variant}`} type={type} disabled={disabled} onClick={onClick}>{children}</button>;export default Button;

@@ -1,0 +1,49 @@
+.dashboard-page h3 {
+  color: var(--color-navy-dark);
+}
+
+.panel h3 {
+  margin-bottom: 0.85rem;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-page h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-page h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page h3 {
+    font-size: 1rem;
+  }
+
+  .panel h3 {
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-page h3 {
+    font-size: 0.95rem;
+  }
+
+  .panel h3 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page h3 {
+    font-size: 0.9rem;
+  }
+
+  .panel h3 {
+    margin-bottom: 0.5rem;
+  }
+}

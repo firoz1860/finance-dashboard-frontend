@@ -1,0 +1,1 @@
+import { Link } from 'react-router-dom';const Landing=()=> <main className='page landing-page'><h1>Finance Data Processing and Access Control Dashboard</h1><p>Track transactions, enforce role-based permissions, and monitor key trends.</p><Link to='/login' className='btn btn-primary'>Sign In</Link></main>;export default Landing;

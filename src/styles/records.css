@@ -1,0 +1,402 @@
+.record-form-panel,
+.records-filters-panel,
+.record-detail-panel,
+.records-empty-state {
+  margin-bottom: 1rem;
+}
+
+.records-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.records-heading-compact {
+  margin-bottom: 0.75rem;
+}
+
+.records-heading h3 {
+  margin: 0;
+}
+
+.records-heading p {
+  margin: 0.35rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.record-form,
+.records-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.records-filters {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.record-form .input-field,
+.records-filters .input-field {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.record-form select,
+.record-form textarea,
+.records-filters select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  background: #fff;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.record-form-notes {
+  grid-column: 1 / -1;
+}
+
+.record-form-actions,
+.records-filter-actions,
+.records-actions,
+.records-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.record-form-actions {
+  grid-column: 1 / -1;
+}
+
+.records-filter-actions {
+  margin-top: 1rem;
+}
+
+.records-actions .btn,
+.records-pagination .btn {
+  padding: 0.55rem 0.9rem;
+}
+
+.form-feedback {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.form-feedback.error {
+  color: var(--color-danger);
+}
+
+.form-feedback.success {
+  color: var(--color-success);
+}
+
+.records-sync-status {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.record-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.record-detail-item {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.85rem;
+  background: var(--color-surface);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.record-detail-item span {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+/* New side-by-side detail layout */
+.record-detail-full {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.record-detail-section {
+  width: 100%;
+}
+
+.record-details-heading {
+  margin: 0 0 0.75rem 0;
+  color: var(--color-navy-dark);
+  font-size: 1.1rem;
+}
+
+.record-detail-notes {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-height: 100px;
+}
+
+.record-detail-notes p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.records-desktop-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.records-page table td:nth-child(6) {
+  width: 260px;
+}
+
+.records-mobile-list {
+  display: none;
+}
+
+.record-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.85rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.record-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.record-card-top h4 {
+  margin: 0;
+  word-break: break-word;
+}
+
+.record-card-top p {
+  margin: 0.35rem 0 0;
+  color: var(--color-muted);
+}
+
+.record-card-grid {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.record-card-notes {
+  margin: 0.9rem 0;
+  color: var(--color-text);
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.record-amount {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+}
+
+.record-amount.income {
+  color: var(--color-success);
+}
+
+.record-amount.expense {
+  color: var(--color-danger);
+}
+
+.records-pagination {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.records-empty-state p {
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .records-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .record-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .record-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .records-filters,
+  .record-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .record-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .record-form,
+  .records-filters,
+  .record-detail-grid,
+  .record-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .records-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .records-desktop-table {
+    display: none;
+  }
+
+  .records-mobile-list {
+    display: block;
+  }
+
+  .record-form-notes {
+    grid-column: 1;
+  }
+
+  .record-form-actions {
+    grid-column: 1;
+  }
+  
+  .record-detail-full {
+    gap: 1rem;
+  }
+  
+  .record-details-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .records-pagination {
+    align-items: stretch;
+  }
+
+  .records-pagination .btn,
+  .records-actions .btn,
+  .record-form-actions .btn,
+  .records-filter-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .record-card-top {
+    flex-direction: column;
+  }
+  
+  .record-form select,
+  .record-form textarea,
+  .records-filters select {
+    font-size: 16px;
+  }
+  
+  .record-detail-item {
+    padding: 0.65rem;
+  }
+  
+  .record-detail-notes {
+    padding: 0.75rem;
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .record-form,
+  .records-filters,
+  .record-detail-grid,
+  .record-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .records-heading {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  
+  .records-heading h3 {
+    font-size: 1rem;
+  }
+  
+  .record-card {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .records-pagination .btn,
+  .records-actions .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .records-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .records-actions .btn {
+    width: 100%;
+  }
+  
+  .record-detail-item {
+    padding: 0.5rem;
+  }
+  
+  .record-detail-item span {
+    font-size: 0.8rem;
+  }
+  
+  .record-detail-item strong {
+    font-size: 0.95rem;
+  }
+  
+  .record-detail-notes {
+    padding: 0.5rem;
+  }
+  
+  .record-details-heading {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;

@@ -1,0 +1,33 @@
+.footer h4 {
+  color: #dbe6ff;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+}

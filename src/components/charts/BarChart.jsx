@@ -1,0 +1,1 @@
+import { Bar, BarChart as RBar, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';const BarChart=({data})=><ResponsiveContainer width='100%' height={280}><RBar data={data}><CartesianGrid strokeDasharray='3 3'/><XAxis dataKey='category'/><YAxis/><Tooltip/><Bar dataKey='_sum.amount' fill='#1e3a8a'/></RBar></ResponsiveContainer>;export default BarChart;
