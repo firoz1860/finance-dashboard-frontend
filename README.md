@@ -2,6 +2,13 @@
 
 This project is a full-stack finance dashboard where teams can capture and analyze financial transactions while enforcing role-based permissions. It combines secure JWT authentication, an API-first backend, and a responsive React interface built around operational reporting workflows. The app is intentionally structured in modules so each domain area (auth, users, records, dashboard) can scale independently.
 
+<img width="1912" height="867" alt="image" src="https://github.com/user-attachments/assets/2b8078a1-5308-45ce-8892-9c3ecc077a10" />
+<img width="1919" height="862" alt="image" src="https://github.com/user-attachments/assets/57069fa6-57b2-4167-a96a-ba569df08eb2" />
+<img width="1899" height="905" alt="image" src="https://github.com/user-attachments/assets/10c73f52-ecd2-44ee-a221-85a97463b2ee" />
+<img width="1899" height="904" alt="image" src="https://github.com/user-attachments/assets/f0bf3279-8cc2-4017-ac18-4cea3a46b89c" />
+<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/b6d3fa7a-5596-497e-a260-6428ebe91688" />
+
+
 ## Tech Stack
 
 - Backend: Node.js, Express.js
